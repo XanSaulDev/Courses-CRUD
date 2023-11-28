@@ -1,0 +1,27 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title course</th>
+        <th scope="col">Instructor</th>
+        <th scope="col">Price</th>
+        <th scope="col">actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for course in courses %}
+      <tr>
+        <th scope="row">{{ forloop.counter }}</th>
+        <td>{{ course.title }}</td>
+        <td>{{ course.instructor.name }}</td>
+        <td>${{ course.price }}</td>
+        <td>
+          <a href="{% url 'course-delete' pk=course.pk %}" class="btn btn-danger">Delete</a>
+          <a href="{% url 'course-edit' pk=course.pk %}" class="btn btn-warning">Edit</a>
+      </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
