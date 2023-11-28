@@ -13,7 +13,12 @@
       {% for course in courses %}
       <tr>
         <th scope="row">{{ forloop.counter }}</th>
-        <td>{{ course.title }}</td>
+        <td>
+          <a href="{% url 'course-detail' pk=course.pk %}" class="link-dark">
+            
+            {{ course.title }}
+          </a>
+        </td>
         <td>{{ course.instructor.name }}</td>
         <td>${{ course.price }}</td>
         <td>
