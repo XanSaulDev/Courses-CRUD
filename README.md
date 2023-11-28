@@ -1,6 +1,7 @@
 # Django Project: Courses-CRUD
 
 This is a simple Django project that includes a  `requirements.txt` file with the necessary dependencies. Follow these steps to set up and run the project.
+![image](https://github.com/XanSaulDev/Courses-CRUD/assets/90731443/66375ce2-2f26-4049-86bc-7934058a4c48)
 
 ## Steps to Run the Project
 
